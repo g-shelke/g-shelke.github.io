@@ -1,172 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gorakh Shelke | Senior Frontend Engineer</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Gorakh Shelke | Senior Frontend Engineer</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      line-height: 1.6;
-      background: #f4f6f8;
-      color: #333;
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    header {
-      background: #0f172a;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e2e8f0;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-    }
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
 
-    header p {
-      margin: 5px 0;
-    }
+.hero h1 {
+  font-size: 48px;
+  background: linear-gradient(90deg, #38bdf8, #6366f1);
+  -webkit-background-clip: text;
+  color: transparent;
+}
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-      background: white;
-    }
+.hero p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #94a3b8;
+}
 
-    h2 {
-      border-bottom: 2px solid #eee;
-      padding-bottom: 5px;
-      margin-top: 30px;
-    }
+.hero .cta {
+  margin-top: 20px;
+}
 
-    ul {
-      padding-left: 20px;
-    }
+.hero a {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  text-decoration: none;
+  background: #6366f1;
+  color: white;
+  transition: 0.3s;
+}
 
-    .skills span {
-      display: inline-block;
-      background: #e2e8f0;
-      padding: 6px 10px;
-      margin: 5px;
-      border-radius: 5px;
-      font-size: 14px;
-    }
+.hero a:hover {
+  background: #4f46e5;
+}
 
-    .project {
-      margin-bottom: 15px;
-    }
+/* SECTION */
+.section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #0f172a;
-      color: white;
-      margin-top: 20px;
-    }
+/* GLASS CARD */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
 
-    a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-  </style>
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #38bdf8;
+}
+
+/* SKILLS */
+.skills span {
+  display: inline-block;
+  background: #1e293b;
+  margin: 5px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* PROJECTS */
+.project {
+  margin-bottom: 15px;
+}
+
+.project a {
+  color: #38bdf8;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  margin-top: 40px;
+  color: #94a3b8;
+}
+
+/* ANIMATION */
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+</style>
 </head>
 
 <body>
 
-<header>
+<!-- HERO -->
+<section class="hero fade-in">
   <h1>Gorakh Shelke</h1>
-  <p>Senior Frontend Engineer (React / TypeScript)</p>
-  <p>Pune, India | +91-9096302613</p>
-  <p>
-    <a href="mailto:sachinshelke28@gmail.com">sachinshelke28@gmail.com</a> |
+  <p>Senior Frontend Engineer | React • TypeScript • Scalable UI Systems</p>
+  <p>Building high-performance SaaS platforms for 11+ years</p>
+
+  <div class="cta">
+    <a href="mailto:sachinshelke28@gmail.com">Contact Me</a>
     <a href="https://www.linkedin.com/in/gorakh-shelke-49218096" target="_blank">LinkedIn</a>
-  </p>
-</header>
-
-<div class="container">
-
-  <h2>Professional Summary</h2>
-  <p>
-    Senior Frontend Engineer with 11+ years of experience building scalable React applications for SaaS and enterprise platforms.
-    Specialized in performance optimization, component architecture, and large-scale UI systems.
-  </p>
-
-  <h2>Key Achievements</h2>
-  <ul>
-    <li>Built frontend architecture for multi-tenant SaaS platform (150+ websites)</li>
-    <li>Improved performance by 30–40% using optimization techniques</li>
-    <li>Handled large-scale datasets with efficient rendering</li>
-    <li>Developed real-time e-commerce UI supporting 500+ concurrent users</li>
-  </ul>
-
-  <h2>Technical Skills</h2>
-  <div class="skills">
-    <span>React.js</span>
-    <span>TypeScript</span>
-    <span>Next.js</span>
-    <span>Redux Toolkit</span>
-    <span>JavaScript</span>
-    <span>HTML5</span>
-    <span>CSS3</span>
-    <span>Node.js</span>
-    <span>Laravel</span>
-    <span>PostgreSQL</span>
-    <span>Docker</span>
-    <span>AWS</span>
   </div>
+</section>
 
-  <h2>Experience</h2>
-  <h3>SynerGenie Solutions</h3>
-  <p><strong>Senior Software Engineer | 2016 - Present</strong></p>
-  <ul>
-    <li>Architected scalable multi-tenant frontend systems</li>
-    <li>Improved performance by 40% with advanced optimization</li>
-    <li>Built reusable component libraries</li>
-    <li>Implemented real-time features with WebSockets</li>
-    <li>Led frontend development across multiple platforms</li>
-  </ul>
-
-  <h3>Aloha Technology</h3>
-  <p><strong>Software Developer | 2015 - 2016</strong></p>
-  <ul>
-    <li>Built REST APIs and integrated 80+ systems</li>
-    <li>Developed frontend and backend modules</li>
-  </ul>
-
-  <h2>Projects</h2>
-
-  <div class="project">
-    <strong>Vahara CMS</strong> –
-    <a href="https://www.vahara.com" target="_blank">vahara.com</a>
-    <p>Multi-tenant SaaS platform powering 150+ websites</p>
+<!-- SUMMARY -->
+<section class="section fade-in">
+  <div class="card">
+    <h2>Professional Summary</h2>
+    <p>
+      Senior Frontend Engineer specializing in building scalable, high-performance React applications.
+      Proven expertise in performance optimization, component architecture, and real-time UI systems
+      handling large-scale data and high concurrency.
+    </p>
   </div>
+</section>
 
-  <div class="project">
-    <strong>CarKeta</strong> –
-    <a href="https://carketa.com" target="_blank">carketa.com</a>
-    <p>Automotive intelligence platform handling large datasets</p>
+<!-- ACHIEVEMENTS -->
+<section class="section fade-in">
+  <div class="card">
+    <h2>Impact & Achievements</h2>
+    <ul>
+      <li>🚀 Powered 150+ production websites (multi-tenant SaaS)</li>
+      <li>⚡ Improved frontend performance by up to 40%</li>
+      <li>📊 Optimized rendering for large datasets (millions of records)</li>
+      <li>🛒 Built real-time systems handling 500+ concurrent users</li>
+    </ul>
   </div>
+</section>
 
-  <div class="project">
-    <strong>Frogtummy</strong> –
-    <a href="https://www.frogtummy.com" target="_blank">frogtummy.com</a>
-    <p>Real-time messaging and finance application</p>
+<!-- SKILLS -->
+<section class="section fade-in">
+  <div class="card">
+    <h2>Tech Stack</h2>
+    <div class="skills">
+      <span>React</span><span>TypeScript</span><span>Next.js</span>
+      <span>Redux Toolkit</span><span>JavaScript</span>
+      <span>Node.js</span><span>Laravel</span>
+      <span>PostgreSQL</span><span>Docker</span>
+      <span>AWS</span>
+    </div>
   </div>
+</section>
 
-  <h2>Education</h2>
-  <ul>
-    <li>MCA – Pune University (2013)</li>
-    <li>BCA – Pune University (2010)</li>
-  </ul>
+<!-- EXPERIENCE -->
+<section class="section fade-in">
+  <div class="card">
+    <h2>Experience</h2>
 
-</div>
+    <h3>SynerGenie Solutions</h3>
+    <p>Senior Software Engineer (2016 - Present)</p>
+    <ul>
+      <li>Architected scalable multi-tenant frontend systems</li>
+      <li>Built reusable component libraries</li>
+      <li>Improved performance with code-splitting & memoization</li>
+      <li>Implemented real-time features using WebSockets</li>
+    </ul>
 
+    <br/>
+
+    <h3>Aloha Technology</h3>
+    <p>Software Developer (2015 - 2016)</p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section fade-in">
+  <div class="card">
+    <h2>Key Projects</h2>
+
+    <div class="project">
+      <strong>Vahara CMS</strong> —
+      <a href="https://www.vahara.com" target="_blank">Visit</a>
+      <p>Multi-tenant SaaS powering 150+ websites</p>
+    </div>
+
+    <div class="project">
+      <strong>CarKeta</strong> —
+      <a href="https://carketa.com" target="_blank">Visit</a>
+      <p>High-performance automotive data platform</p>
+    </div>
+
+    <div class="project">
+      <strong>Frogtummy</strong> —
+      <a href="https://www.frogtummy.com" target="_blank">Visit</a>
+      <p>Real-time messaging and finance system</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
-  <p>© 2026 Gorakh Shelke</p>
+  © 2026 Gorakh Shelke • Built with simplicity & performance
 </footer>
 
 </body>
